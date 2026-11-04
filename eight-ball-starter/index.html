@@ -23,8 +23,8 @@
   <!-- ============ HERO ============ -->
   <header class="hero text-center">
     <div class="container">
-      <h1 class="display-5">Ask the Magic 8 Ball</h1>
-      <p class="lead mb-0">Type a yes-or-no question and let the 8 Ball decide.</p>
+      <h1 class="display-5 fade-in-text">Ask the Magic 8 Ball</h1>
+      <p class="lead mb-0 fade-in-text">Type a yes-or-no question and let the 8 Ball decide.</p>
     </div>
   </header>
 
@@ -39,7 +39,7 @@
             <div class="card-body">
               <span class="step-number">1</span>
               <h3 class="h5 mt-3">Enter your name</h3>
-              <p class="mb-0">Placeholder text. Explain this step for your users.</p>
+              <p class="mb-0">Please enter your name in the box labeled "Your name"</p>
             </div>
           </div>
         </div>
@@ -47,8 +47,8 @@
           <div class="card step-card h-100">
             <div class="card-body">
               <span class="step-number">2</span>
-              <h3 class="h5 mt-3">Ask a question</h3>
-              <p class="mb-0">Placeholder text. Explain this step for your users.</p>
+              <h3 class="h5 mt-3 ">Ask a question</h3>
+              <p class="mb-0">Enter any yes-or-no question in the box below</p>
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@
             <div class="card-body">
               <span class="step-number">3</span>
               <h3 class="h5 mt-3">Get your answer</h3>
-              <p class="mb-0">Placeholder text. Explain this step for your users.</p>
+              <p class="mb-0">click the button labeled "ask the 8 ball", and your answer will appear inside the ball.</p>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@
             <label for="questionInput" class="form-label">Your yes-or-no question</label>
             <input type="text" id="questionInput" class="form-control mb-4" placeholder="Will I pass my test?">
 
-            <button type="button" id="askButton" onclick="askEightBall()" class="btn btn-ask w-100">Ask the 8 Ball</button>
+            <button type="button" id="askButton" onclick="askEightBall(), fadeReset()" class="btn btn-ask w-100 ">Ask the 8 Ball</button>
           </div>
         </div>
       </section>
@@ -92,7 +92,7 @@
 
             <div class="ball">
               <div class="window">
-                <p id="answer" class="answer">8</p>
+                <p id="answer" class="answer fade-in-text">8</p>
               </div>
             </div>
 
@@ -107,7 +107,7 @@
   <!-- ============ FOOTER ============ -->
   <footer class="site-footer py-4 text-center">
     <div class="container">
-      <p class="m-0">Created by Your Name</p>
+      <p class="m-0">Created by Gabe Gibbs</p>
     </div>
   </footer>
 

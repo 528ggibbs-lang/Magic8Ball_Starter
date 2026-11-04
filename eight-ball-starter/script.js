@@ -7,7 +7,6 @@ function askEightBall() {
   let userName = document.getElementById('nameInput').value
   let userQuestion = document.getElementById('questionInput').value
   console.log(userName, userQuestion)
-
    // Show The Question on Site
     document.getElementById('questionOut').textContent = "you asked: " + userQuestion;
   
@@ -74,4 +73,17 @@ function askEightBall() {
 
 
 
+}
+
+
+function fadeReset() {
+  const elements = document.querySelectorAll('.greeting, .question-out, .answer')
+  
+  elements.forEach(element => {
+    element.classList.remove('fade-in-text')
+
+    void element.offsetWidth
+
+    element.classList.add('fade-in-text')
+  });
 }

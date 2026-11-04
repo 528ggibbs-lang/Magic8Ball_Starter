@@ -125,7 +125,10 @@ body {
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  background: #1b2a6b;
+  background-image:linear-gradient(rgba(45, 44, 131, 0.5)), url(assets/imgs/kilgore.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,6 +172,17 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 
+/* ---fade in animation---*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
+.fade-in-text {
+  animation: fadeIn 2s ease-in-out;
+}
 
-/* NOTE: make the eight ball into kilgores face */
