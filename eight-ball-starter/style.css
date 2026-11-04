@@ -4,9 +4,9 @@
    ========================================== */
 
 :root {
-  --brand: #3b2a6b;        /* navbar, hero, button */
-  --brand-light: #ece8f6;  /* page background */
-  --accent: #f4b942;       /* step numbers, highlights */
+  --brand: #3fd87f;        /* navbar, hero, button */
+  --brand-light: #d3d2d6;  /* page background */
+  --accent: #24bb4c;       /* step numbers, highlights */
   --text: #1f1d2b;
   --font: "Poppins", Arial, sans-serif;
 }
