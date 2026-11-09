@@ -45,10 +45,10 @@ function askEightBall() {
         eightBall = 'It is decidedly so';
         break;
       case randomNumber = 2:
-        eightBall = 'Reply hazy try again';
+        eightBall = 'Signs point to yes';
         break;
       case randomNumber = 3:
-        eightBall = 'Cannot predict now';
+        eightBall = 'Outlook not so good';
         break;
       case randomNumber = 4:
         eightBall = 'Do not count on it';
@@ -57,15 +57,21 @@ function askEightBall() {
         eightBall = 'My sources say no';
         break;
       case randomNumber = 6:
-        eightBall = 'Outlook not so good';
+        eightBall = 'Cannot predict now';
         break;
       case randomNumber = 7:
-        eightBall = 'Signs point to yes';
+        eightBall = 'Reply hazy try again';
         break;
     }
     document.getElementById('answer').textContent = `${eightBall}`
   //Show the 8ball answer type badge
-
+    if (randomNumber <= 2) {
+      document.getElementById('answerType').innerHTML = '<span class="yes"><p>Yes</p></span>'
+    } else if (randomNumber > 5) {
+      document.getElementById('answerType').innerHTML = '<span class="maybe"><p>Maybe...</p></span>'
+    } else {
+      document.getElementById('answerType').innerHTML = '<span class="no"><p>No</p></span>'
+    }
 
 
 
